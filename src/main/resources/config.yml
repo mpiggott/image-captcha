@@ -1,0 +1,7 @@
+termFile: src/main/resources/images.txt
+
+# Obtain an API Key
+#simpleApiKey: 
+
+# Create a Custom Search Engine @ https://www.google.com/cse/manage/all
+#cx: 

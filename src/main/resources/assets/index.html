@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<header>
+		<script src='angular.min.js'></script>
+		<script src='captcha.js'></script>
+	</header>
+	<body ng-app='captcha' class='ng-cloak'>
+		<div ng-controller='CaptchaController'>
+			<div ng-show='captchaId != null'>
+				<img ng-src='/service/captcha/{{captchaId}}'>
+				<form ng-submit='doGuess()'>
+					<input type='text' ng-model='guess' required>
+					<button>Submit</button>
+				</form>
+			</div>
+			<p>Correct - {{successful}}</p>
+			<p>Incorrect - {{errors}}</p>
+		</div>
+	</body>
+</html>
